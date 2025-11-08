@@ -17,5 +17,5 @@ A backend API built with Express.js
 Tasks stored in an in-memory array (so no DB setup)
 
 For running the program:
-prompt install npm
-then prompt start npm and open http://localhost:3000/
+prompt npm install
+then prompt npm start and open http://localhost:3000/
