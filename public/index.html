@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo App (Express API)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📝 Todo List</h1>
+
+    <div class="controls">
+      <input id="newTodo" placeholder="یک کار جدید بنویس..." />
+      <button id="addBtn">افزودن</button>
+      <input id="search" placeholder="جستجو..." />
+      <select id="filter">
+        <option value="all">همه</option>
+        <option value="done">انجام‌شده</option>
+        <option value="todo">انجام‌نشده</option>
+      </select>
+    </div>
+
+    <ul id="list" class="todo-list"></ul>
+
+    <div class="footer">
+      <span id="count">0 کار</span>
+      <button id="clearAll">پاک کردن همه</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
