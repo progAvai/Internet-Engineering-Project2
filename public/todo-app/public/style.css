@@ -1,0 +1,80 @@
+/* style.css */
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --danger: #ef4444;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  direction: rtl;
+}
+
+.app {
+  width: 100%;
+  max-width: 700px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.08);
+}
+
+h1 { text-align: center; margin-bottom: 12px; }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.controls input[type="text"], .controls select {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.controls button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todo-list { list-style: none; padding: 0; margin: 0; }
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.todo-list li.done { text-decoration: line-through; color: var(--muted); opacity: 0.9; }
+
+.todo-list .actions button {
+  margin-left: 6px;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions .del { background: var(--danger); color: white; }
+.actions .edit { background: #f59e0b; color: white; }
+
+.footer { display:flex; justify-content:space-between; align-items:center; margin-top: 12px; }
+.footer button { background: #e5e7eb; border: none; padding: 8px 10px; border-radius: 8px; cursor: pointer; }
